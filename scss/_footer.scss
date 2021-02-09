@@ -1,0 +1,66 @@
+.page-footer {
+    max-height: 90px;
+    background-color: $FontTextColor;
+}
+.row-footer {
+    height: 100%;
+    align-items: center;
+}
+.footer-date {
+    font-size: 16px;
+    font-weight: 300;
+    color: $FooterFontTextColor;
+
+    @media screen and (max-width: 991px) {
+        font-size: 14px;
+    }
+
+    @media screen and (max-width: 767px) {
+        font-size: 12px;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 8px;
+    }
+}
+.footer-logo {
+    font-family: $FontFamilyLogo;
+    font-size: 25px;
+    color: $FooterFontTextColor;
+    text-align: center;
+
+    @media screen and (max-width: 991px) {
+        font-size: 22px;
+    }
+
+    @media screen and (max-width: 767px) {
+        font-size: 20px;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 18px;
+    }
+}
+.footer-autor {
+    font-size: 15px;
+    font-weight: 300;
+    color: $FooterFontTextColor;
+    text-align: right;
+
+    @media screen and (max-width: 991px) {
+        font-size: 14px;
+    }
+
+    @media screen and (max-width: 767px) {
+        font-size: 12px;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 8px;
+    }
+
+    &--color {
+        color: #ff2b58;
+        font-weight: 700;
+    }
+}

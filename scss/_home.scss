@@ -1,0 +1,104 @@
+.page {
+
+    &--home-bg {
+        background-color: #f9f8fb;
+        background-image: url(../images/bg-home.jpg); 
+    }
+
+    &__home-article {
+        padding: 300px 15px 300px 15px;
+        margin: 0 -15px;
+
+        @media screen and (max-width: 991px) {
+            padding: 150px 15px 150px 15px;
+        }
+
+        @media screen and (max-width: 576px) {
+            padding: 100px 15px 100px 15px;
+        }
+    }
+}
+.article {
+    max-width: 400px;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 767px) {
+        max-width: 300px;
+    }
+
+    @media screen and (max-width: 480px) {
+        max-width: 200px;
+    }
+
+    &__caption {
+        font-size: 60px;
+        font-weight: 900;
+        text-transform: capitalize;
+        color: $FontTextColor;
+        margin: 0 0 20px 0;
+
+        @media screen and (max-width: 767px) {
+            font-size: 40px;
+            margin: 0 0 10px 0;
+        }
+    }
+
+    &__text {
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 27px;
+        color: $FontTextColor;
+        margin: 0 0 20px 0;
+
+        @media screen and (max-width: 991px) {
+            font-size: 15px;
+        }
+
+        @media screen and (max-width: 767px) {
+            font-size: 14px;
+            margin: 0 0 10px 0;
+        }
+    }
+
+    &__btn {
+        background-color: $ArticleBtnMainColor;
+    
+        &:focus,
+        &:hover {
+            color: $ArticleBtnMainColor;
+            background-color: #fff;
+        }
+
+        &:active {
+            color: $ArticleBtnMainColor;
+            background-color: #fff;
+            border: 2px solid $ArticleBtnMainColor;
+            box-sizing: border-box;
+        }
+    }
+}
+.page__scroll {
+    position: absolute;
+    margin: 0 0 50px 0;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media screen and (max-width: 991px) {
+        margin: 0 0 15px 0;
+    }
+
+    @media screen and (max-width: 767px) {
+        margin: 0;
+    }
+}
+.scroll__img {
+
+    @media screen and (max-width: 991px) {
+        height: 30px;
+    }
+
+    @media screen and (max-width: 767px) {
+        height: 20px;
+    }
+}
